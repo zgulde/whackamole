@@ -1,13 +1,31 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App h1, .App .display {
+    text-align: center;
+}
+
+.gameboard {
+    display: grid;
+    justify-content: center;
+    height: calc(60vh + 5em);
+    align-items: center;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 20vh 20vh 20vh;
+    gap: 2em;
+}
+
+.hole {
+    height: 100%;
+}
+
+.App button {
+    background: white;
+    padding: 1em 3em;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
 }
